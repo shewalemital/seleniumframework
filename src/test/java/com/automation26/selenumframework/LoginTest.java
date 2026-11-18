@@ -8,29 +8,31 @@ import Pages.CartPage;
 import Pages.CheckoutPage;
 import Pages.InventoryPage;
 import Pages.Loginpage;
+import utilities.ConfigReader;
 import base.Baseclass;
 
 	public class LoginTest extends Baseclass {
-
-	    @Test
-	    public void verifyLogin() {
+		public void loginToApplication() {
 
 	        Loginpage login = new Loginpage(driver);
 
-	        login.enterUsername("standard_user");
-	        login.enterPassword("secret_sauce");
+	        ConfigReader config = new ConfigReader();
+
+	        login.enterUsername(config.getUsername());
+	        login.enterPassword(config.getPassword());
 	        login.clickLogin();
+		}
+	    @Test
+	    public void verifyLogin() {
+
+	    	loginToApplication();
 
 	        Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
 	    }
 	    @Test
 	    public void addToCartTest() {
 
-	        Loginpage login = new Loginpage(driver);
-
-	        login.enterUsername("standard_user");
-	        login.enterPassword("secret_sauce");
-	        login.clickLogin();
+	    	loginToApplication();
 
 	        InventoryPage inventory = new InventoryPage(driver);
 
@@ -39,11 +41,7 @@ import base.Baseclass;
 	    @Test
 	    public void openCartTest() {
 
-	        Loginpage login = new Loginpage(driver);
-
-	        login.enterUsername("standard_user");
-	        login.enterPassword("secret_sauce");
-	        login.clickLogin();
+	    	loginToApplication();
 
 	        InventoryPage inventory =
 	                new InventoryPage(driver);
@@ -59,13 +57,9 @@ import base.Baseclass;
 	                "Sauce Labs Backpack");
 	    }
 	    @Test
-	    public void checkoutTest()throws InterruptedException {
+	    public void checkoutTest() {
 
-	        Loginpage login = new Loginpage(driver);
-
-	        login.enterUsername("standard_user");
-	        login.enterPassword("secret_sauce");
-	        login.clickLogin();
+	    	loginToApplication();
 
 	        InventoryPage inventory = new InventoryPage(driver);
 
@@ -75,7 +69,7 @@ import base.Baseclass;
 
 	        cart.openCart();
 	        System.out.println(driver.getCurrentUrl());
-	        Thread.sleep(2000);
+	        //Thread.sleep(2000);
 	        cart.clickCheckout();
 
 	        CheckoutPage checkout = new CheckoutPage(driver);
