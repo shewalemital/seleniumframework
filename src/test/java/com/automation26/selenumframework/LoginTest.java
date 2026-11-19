@@ -12,9 +12,16 @@ import utilities.ScreenshotUtility;
 import org.testng.annotations.Listeners;
 import listeners.TestListener;
 import utilities.ConfigReader;
+import org.testng.annotations.DataProvider;
+import utilities.ExcelUtility;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import base.Baseclass;
 @Listeners(TestListener.class)
 	public class LoginTest extends Baseclass {
+	private static final Logger logger =
+	        LogManager.getLogger(LoginTest.class);
+	
 		public void loginToApplication() {
 
 	        Loginpage login = new Loginpage(driver);
@@ -25,10 +32,35 @@ import base.Baseclass;
 	        login.enterPassword(config.getPassword());
 	        login.clickLogin();
 		}
+		
+		@DataProvider(name = "loginData")
+		public Object[][] loginData() {
+
+		    return ExcelUtility.getLoginData();
+		}
+		@Test(dataProvider = "loginData")
+		public void loginWithExcelData(
+		        String username,
+		        String password) {
+
+		    Loginpage login =
+		            new Loginpage(driver);
+
+		    login.enterUsername(username);
+
+		    login.enterPassword(password);
+
+		    login.clickLogin();
+
+		    logger.info(
+		            "Login attempted using Excel data");
+
+		}
 	    @Test
 	    public void verifyLogin() {
-
+	    	logger.info("Login Test Started");
 	    	loginToApplication();
+	    	logger.info("Login Successful");
 	    	 ScreenshotUtility.captureScreenshot(
 	    	            driver,
 	    	            "LoginSuccess");
@@ -46,9 +78,9 @@ import base.Baseclass;
 	    }
 	    @Test
 	    public void openCartTest() {
-
+	    	logger.info("Add To Cart Test Started");
 	    	loginToApplication();
-
+	    	logger.info("Product Added Successfully");
 	        InventoryPage inventory =
 	                new InventoryPage(driver);
 
@@ -64,7 +96,7 @@ import base.Baseclass;
 	    }
 	    @Test
 	    public void checkoutTest() {
-
+	    	logger.info("Checkout Test Started");
 	    	loginToApplication();
 
 	        InventoryPage inventory = new InventoryPage(driver);
