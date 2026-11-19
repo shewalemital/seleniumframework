@@ -8,9 +8,12 @@ import Pages.CartPage;
 import Pages.CheckoutPage;
 import Pages.InventoryPage;
 import Pages.Loginpage;
+import utilities.ScreenshotUtility;
+import org.testng.annotations.Listeners;
+import listeners.TestListener;
 import utilities.ConfigReader;
 import base.Baseclass;
-
+@Listeners(TestListener.class)
 	public class LoginTest extends Baseclass {
 		public void loginToApplication() {
 
@@ -26,6 +29,9 @@ import base.Baseclass;
 	    public void verifyLogin() {
 
 	    	loginToApplication();
+	    	 ScreenshotUtility.captureScreenshot(
+	    	            driver,
+	    	            "LoginSuccess");
 
 	        Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
 	    }
