@@ -6,10 +6,7 @@
       <class name="com.automation26.selenumframework.LoginTest">
         <methods>
           <include name="checkoutTest"/>
-          <include name="addToCartTest"/>
-          <include name="verifyLogin"/>
           <include name="setup"/>
-          <include name="openCartTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.automation26.selenumframework.LoginTest -->
