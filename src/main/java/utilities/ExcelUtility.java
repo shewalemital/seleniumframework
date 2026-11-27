@@ -25,19 +25,24 @@ public class ExcelUtility {
 
             int rows = sheet.getPhysicalNumberOfRows();
 
-            data = new Object[rows - 1][2];
+            data = new Object[rows - 1][3];;
 
             for (int i = 1; i < rows; i++) {
 
-                data[i - 1][0] =
-                        sheet.getRow(i)
-                             .getCell(0)
-                             .getStringCellValue();
+            	data[i - 1][0] =
+            	        sheet.getRow(i)
+            	             .getCell(0)
+            	             .getStringCellValue();
 
-                data[i - 1][1] =
-                        sheet.getRow(i)
-                             .getCell(1)
-                             .getStringCellValue();
+            	data[i - 1][1] =
+            	        sheet.getRow(i)
+            	             .getCell(1)
+            	             .getStringCellValue();
+
+            	data[i - 1][2] =
+            	        sheet.getRow(i)
+            	             .getCell(2)
+            	             .getStringCellValue();
             }
 
             workbook.close();

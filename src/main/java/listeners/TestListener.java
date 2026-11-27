@@ -26,7 +26,8 @@ public class TestListener implements ITestListener {
 
     public void onTestFailure(ITestResult result) {
 
-        test.fail("Test Failed");
+        test.fail(result.getThrowable());
+
         System.out.println(result.getName() + " FAILED");
     }
 

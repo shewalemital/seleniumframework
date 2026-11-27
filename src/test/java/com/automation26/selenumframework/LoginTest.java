@@ -41,20 +41,31 @@ import base.Baseclass;
 		@Test(dataProvider = "loginData")
 		public void loginWithExcelData(
 		        String username,
-		        String password) {
+		        String password,
+		        String expectedResult) {
 
 		    Loginpage login =
 		            new Loginpage(driver);
 
 		    login.enterUsername(username);
-
 		    login.enterPassword(password);
-
 		    login.clickLogin();
 
-		    logger.info(
-		            "Login attempted using Excel data");
+		    if(expectedResult.equalsIgnoreCase("VALID")) {
 
+		        Assert.assertTrue(
+		                driver.getCurrentUrl()
+		                        .contains("inventory"));
+
+		        logger.info("Valid Login Passed");
+
+		    } else {
+
+		        Assert.assertTrue(
+		                login.getErrorMessage().length() > 0);
+
+		        logger.info("Invalid Login Passed");
+		    }
 		}
 	    @Test
 	    public void verifyLogin() {
@@ -66,6 +77,7 @@ import base.Baseclass;
 	    	            "LoginSuccess");
 
 	        Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
+	        //Assert.assertTrue(false);
 	    }
 	    @Test
 	    public void addToCartTest() {

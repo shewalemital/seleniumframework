@@ -11,3 +11,48 @@
 2026-11-19 16:48:26                 [main] INFO  com.automation26.selenumframework.LoginTest - Product Added Successfully
 2026-11-19 16:48:28                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Test Started
 2026-11-19 16:48:28                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Successful
+2026-11-25 13:15:47                 [main] INFO  com.automation26.selenumframework.LoginTest - Checkout Test Started
+2026-11-25 13:15:54                 [main] INFO  com.automation26.selenumframework.LoginTest - Add To Cart Test Started
+2026-11-25 13:15:54                 [main] INFO  com.automation26.selenumframework.LoginTest - Product Added Successfully
+2026-11-25 13:15:56                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Test Started
+2026-11-25 13:15:56                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Successful
+2026-11-25 13:19:56                 [main] INFO  com.automation26.selenumframework.LoginTest - Checkout Test Started
+2026-11-25 13:19:59                 [main] INFO  com.automation26.selenumframework.LoginTest - Valid Login Passed
+2026-11-25 13:20:00                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-25 13:20:02                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-25 13:20:03                 [main] INFO  com.automation26.selenumframework.LoginTest - Add To Cart Test Started
+2026-11-25 13:20:04                 [main] INFO  com.automation26.selenumframework.LoginTest - Product Added Successfully
+2026-11-25 13:20:05                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Test Started
+2026-11-25 13:20:06                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Successful
+2026-11-27 11:17:15                 [main] INFO  com.automation26.selenumframework.LoginTest - Checkout Test Started
+2026-11-27 11:17:18                 [main] INFO  com.automation26.selenumframework.LoginTest - Valid Login Passed
+2026-11-27 11:17:20                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 11:17:21                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 11:17:22                 [main] INFO  com.automation26.selenumframework.LoginTest - Add To Cart Test Started
+2026-11-27 11:17:23                 [main] INFO  com.automation26.selenumframework.LoginTest - Product Added Successfully
+2026-11-27 11:17:24                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Test Started
+2026-11-27 11:17:24                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Successful
+2026-11-27 11:51:33                 [main] INFO  com.automation26.selenumframework.LoginTest - Checkout Test Started
+2026-11-27 11:51:36                 [main] INFO  com.automation26.selenumframework.LoginTest - Valid Login Passed
+2026-11-27 11:51:38                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 11:51:40                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 11:51:41                 [main] INFO  com.automation26.selenumframework.LoginTest - Add To Cart Test Started
+2026-11-27 11:51:42                 [main] INFO  com.automation26.selenumframework.LoginTest - Product Added Successfully
+2026-11-27 11:51:43                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Test Started
+2026-11-27 11:51:44                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Successful
+2026-11-27 11:53:50                 [main] INFO  com.automation26.selenumframework.LoginTest - Checkout Test Started
+2026-11-27 11:53:52                 [main] INFO  com.automation26.selenumframework.LoginTest - Valid Login Passed
+2026-11-27 11:53:54                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 11:53:56                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 11:53:57                 [main] INFO  com.automation26.selenumframework.LoginTest - Add To Cart Test Started
+2026-11-27 11:53:58                 [main] INFO  com.automation26.selenumframework.LoginTest - Product Added Successfully
+2026-11-27 11:53:59                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Test Started
+2026-11-27 11:54:00                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Successful
+2026-11-27 12:58:03                 [main] INFO  com.automation26.selenumframework.LoginTest - Checkout Test Started
+2026-11-27 12:58:07                 [main] INFO  com.automation26.selenumframework.LoginTest - Valid Login Passed
+2026-11-27 12:58:08                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 12:58:09                 [main] INFO  com.automation26.selenumframework.LoginTest - Invalid Login Passed
+2026-11-27 12:58:11                 [main] INFO  com.automation26.selenumframework.LoginTest - Add To Cart Test Started
+2026-11-27 12:58:11                 [main] INFO  com.automation26.selenumframework.LoginTest - Product Added Successfully
+2026-11-27 12:58:13                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Test Started
+2026-11-27 12:58:13                 [main] INFO  com.automation26.selenumframework.LoginTest - Login Successful
