@@ -43,6 +43,13 @@ public class CheckoutPage {
     }
 
     public void clickFinish() {
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         driver.findElement(finishBtn).click();
     }
     public String getSuccessMessage() {
